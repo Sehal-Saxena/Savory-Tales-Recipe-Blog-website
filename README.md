@@ -54,11 +54,3 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-You can deploy this project using any hosting service that supports static sites like:
-
-- Vercel
-- Netlify
-- GitHub Pages
-- Cloudflare Pages
