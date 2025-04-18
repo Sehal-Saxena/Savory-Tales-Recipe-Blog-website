@@ -1,56 +1,151 @@
-# Savory Tales Recipe Collection
+# 🍽️ Savory Tales Recipe Blog
 
-## Project info
+A beautiful, modern recipe blog website showcasing delicious homemade recipes with detailed instructions, ingredient lists, and a user-friendly interface.
 
-A delicious recipe website featuring a collection of homemade recipes.
+![Savory Tales Recipe Blog](https://images.unsplash.com/photo-1505935428862-770b6f24f629?q=80&w=1000)
 
-## How can I edit this code?
+## 📋 Features
 
-There are several ways of editing your application.
+- **Recipe Showcase**: Browse a curated collection of delicious recipes with beautiful images
+- **Featured Recipes**: Highlight special recipes on the homepage
+- **Categories**: Browse recipes by categories like Breakfast, Quick Dinner, Vegetarian, etc.
+- **Recipe Details**: View detailed recipe pages with:
+  - Ingredient lists with adjustable serving sizes
+  - Step-by-step cooking instructions with optional photos and tips
+  - Cooking timers for recipe steps
+  - Difficulty levels and preparation times
+  - Recipe ratings and comments
+  - Recipe notes and cooking tips
+- **User Interactions**: Add recipes to favorites, leave comments, and rate recipes
+- **Add New Recipes**: Add your own recipes through a user-friendly dialog
+- **Responsive Design**: Fully responsive layout that works across desktop, tablet, and mobile devices
+- **Newsletter Subscription**: Sign up for weekly recipe updates
+- **Advanced UI Components**: Beautiful UI with paper textures, handwritten fonts, and a warm color palette
 
-**Use your preferred IDE**
+## 🛠️ Technologies Used
 
-If you want to work locally using your own IDE, you can clone this repo and push changes.
+### Frontend
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React 18** - UI component library
+- **TypeScript** - Static typing for JavaScript
+- **Vite** - Fast build tool and development server
+- **React Router** - For navigation and routing
+- **React Hook Form** - Form validation and handling
+- **React Query** - Data fetching, caching, and state management
 
-Follow these steps:
+### Styling & UI
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Accessible component system built on Radix UI
+- **Lucide React** - Beautiful, consistent icon set
+- **Radix UI** - Headless UI components
+- **Embla Carousel** - For image carousels
+- **React Day Picker** - Date selection components
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Backend Integration
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Supabase** - Backend as a service (prepared for integration)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Data Validation
+
+- **Zod** - TypeScript-first schema validation
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or newer recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Sehal-Saxena/Savory-Tales-Recipe-Blog-website.git
+cd Savory-Tales-Recipe-Blog-website
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+# or
+yarn install
+```
 
-**Use GitHub Codespaces**
+3. Start the development server:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## What technologies are used for this project?
+4. Open your browser and navigate to `http://localhost:8080`
 
-This project is built with:
+## 🏗️ Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+savory-tales/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable UI components
+│   │   ├── ui/             # Base UI components from shadcn/ui
+│   ├── data/               # Static data and mock data
+│   ├── hooks/              # Custom React hooks
+│   ├── integrations/       # External service integrations
+│   │   └── supabase/       # Supabase client and types
+│   ├── lib/                # Utility functions
+│   ├── pages/              # Page components
+│   └── App.tsx             # Main application component
+├── index.html              # HTML entry point
+├── tailwind.config.ts      # Tailwind CSS configuration
+└── vite.config.ts          # Vite configuration
+```
 
+## 📱 Responsive Design
+
+The application is fully responsive and works seamlessly across:
+
+- Desktop computers
+- Tablets
+- Mobile phones
+
+## 🔄 State Management
+
+- React's built-in state management with hooks
+- React Query for server state management
+- Context API for theme and global state
+
+## 🌐 Deployment
+
+You can deploy this project using any hosting service that supports static sites:
+
+- **Vercel**: Optimal for React applications with zero-config deployment
+- **Netlify**: Easy deployment with continuous integration
+- **GitHub Pages**: Free hosting directly from your repository
+- **Cloudflare Pages**: Fast global CDN with free hosting
+
+## 🛣️ Roadmap
+
+- User authentication
+- Saved recipes functionality
+- Full Supabase backend integration
+- Search functionality
+- Meal planning calendar
+- Shopping list generation
+- Print-friendly recipe pages
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Sehal-Saxena/Savory-Tales-Recipe-Blog-website/issues).
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👏 Acknowledgments
+
+- Recipe images from [Unsplash](https://unsplash.com/)
+- Icons from [Lucide](https://lucide.dev/)
